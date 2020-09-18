@@ -45,7 +45,7 @@ function setup() {
 	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.45, isStatic:true});
 	World.add(world, packageBody);
 	
-	targetBody1 = Bodies.rectangle(width/2 , height-45, 200, 20, {isStatic:true});
+	targetBody1 = Bodies.rectangle(width/2 , height-60, 200, 20, {isStatic:true});
 	World.add(world, targetBody1);
 
 	targetBody2 = Bodies.rectangle(300 , height-85, 20, 100, {isStatic:true});
@@ -68,9 +68,6 @@ function draw() {
   background(0);
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
-
-  targetSprite1.x= targetBody1.position.x 
-  targetSprite1.y= targetBody1.position.y
 
 keyPressed();
 
